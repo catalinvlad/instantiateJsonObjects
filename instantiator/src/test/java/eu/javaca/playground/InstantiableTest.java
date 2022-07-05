@@ -21,7 +21,7 @@ class InstantiableTest {
 
 
     @Test
-    void instantiateSimpleJsonExample() {
+    void instantiateSimpleJsonExampleTest() {
         // Arrange
         Instantiable i = new Instantiable() {};
         Person person = new Person();
@@ -80,7 +80,9 @@ class InstantiableTest {
                 "    \"numbers\": [1,4,7],\n" +
                 "    \"lastUpdate\": \"2022-07-04\"\n" +
                 "}";
+        System.out.println("Expected result: \n");
+        System.out.println(expected);
         assertEquals(expected, result);
-        System.out.println(result);
+        System.out.println("\nTest successful!");
     }
 }
