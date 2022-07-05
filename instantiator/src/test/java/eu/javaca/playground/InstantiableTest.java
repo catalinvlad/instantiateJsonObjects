@@ -52,6 +52,7 @@ class InstantiableTest {
         person.setLastUpdate(LocalDate.of(2022, 07, 04));
 
         // Act
+        System.out.println("Testing the instantiation of a JSON example.");
         String result = i.instantiate(person, Target.JSON);
 
         // Assert
@@ -80,9 +81,9 @@ class InstantiableTest {
                 "    \"numbers\": [1,4,7],\n" +
                 "    \"lastUpdate\": \"2022-07-04\"\n" +
                 "}";
-        System.out.println("Expected result: \n");
+        System.out.println("Expected result: ");
         System.out.println(expected);
         assertEquals(expected, result);
-        System.out.println("\nTest successful!");
+        System.out.println("\nTest passed!");
     }
 }
