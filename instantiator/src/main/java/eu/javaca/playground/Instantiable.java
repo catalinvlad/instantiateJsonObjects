@@ -2,7 +2,7 @@ package eu.javaca.playground;
 
 public interface Instantiable {
 
-    default <T> String instantiate(T myPojo, Target target) {
+    default <T extends Pojo> String instantiate(T myPojo, Target target) {
         String result;
         switch (target) {
             case JSON:
