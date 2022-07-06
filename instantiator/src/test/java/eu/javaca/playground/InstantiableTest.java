@@ -59,8 +59,8 @@ class InstantiableTest {
         String expected = "{\n" +
                 "    \"name\": \"Popescu Gigel\",\n" +
                 "    \"age\": 21,\n" +
-                "    \"hobbies\": [\n " +
-                "   {\n" +
+                "    \"hobbies\": [\n" +
+                "    {\n" +
                 "        \"type\": \"WATER_SPORT\",\n" +
                 "        \"proficiencyLevel\": 4,\n" +
                 "        \"timePracticing\": 10,\n" +
